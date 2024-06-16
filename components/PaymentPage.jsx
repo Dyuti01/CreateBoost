@@ -202,7 +202,6 @@ const PaymentPage = ({ params }) => {
                             paymentform.name = fanName.current.value
                             paymentform.message = message.current.value
                             paymentform.amount = (amountValue.current.value * 100)
-                            console.log(paymentform.amount)
                             pay(e, paymentform.amount)
                         }} disabled={paymentform.name.length===0 || Number(paymentform.amount)<10} className='disabled:bg-slate-500 bg-blue-600 mt-3 px-10 py-2 rounded-lg' id="rzp-button1">Pay</button>
 
