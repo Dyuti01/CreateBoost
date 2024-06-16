@@ -51,7 +51,7 @@ const Navbar = () => {
                     setTimeout(()=>{
                         setDropDown(false)
                     }, 200)
-                }} id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-black dark:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-4" type="button">Welcome, {user.given_name.split(" ")[0]} <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                }} id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white dark:text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-4" type="button">Welcome, {user.given_name.split(" ")[0]} <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                 </svg>
                 </button>
@@ -63,11 +63,7 @@ const Navbar = () => {
                                 <Link href={`/dashboard/${data.username}`} className="rounded-lg block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black dark:text-white">Dashboard</Link>
                             </li>
                             <li>
-                                {/* <Link href={`/profile/${user.email.split('@')[0]}`} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black dark:text-white">Profile</Link> */}
                                 <Link href={`/profile/${data.username}`} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black dark:text-white">Profile</Link>
-                            </li>
-                            <li>
-                                <Link href="/contributors" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black dark:text-white">Contributors</Link>
                             </li>
                             <li>
                                 <LogoutLink className="rounded-lg block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black dark:text-white">Sign out
