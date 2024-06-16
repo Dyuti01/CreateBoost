@@ -35,9 +35,6 @@ const page = () => {
     let u = await fetchuser(user.email)
     setForm(u);
     updateData(u);
-    // setUserData(u);
-    // console.log(u);
-    console.log(data);
   }
   useEffect(()=>{
     if (isAuthenticated){
@@ -48,7 +45,6 @@ const page = () => {
 
   const handleChange = (e) => {
     setForm({ ...userform, [e.target.name]: e.target.value })  // Eliminating re-rendering at each change (since state changes) by using useRef hook
-    // console.log(userform)
 }
 
 const handleSubmit = async ()=>{
