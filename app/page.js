@@ -1,6 +1,28 @@
+"use client"
+import React, { useContext, useEffect } from 'react'
+import { fetchuser, saveUser, updateProfile } from '@/actions/useractions'
+import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
+import { UserData } from '@/store/dataStore';
+
 import Hero from "@/components/Hero";
 
 export default function Home() {
+   const {
+    user,
+    isAuthenticated,
+  } = useKindeBrowserClient();
+    const {data, updateData} = useContext(UserData)
+
+  const getUser = async()=>{
+    let u = await fetchuser(user.email)
+    updateData(u);
+  }
+  useEffect(()=>{
+    if (isAuthenticated){
+      saveUser()
+      getUser()
+    }
+  }, [isAuthenticated, user])
 
   return (
     <>
