@@ -1,6 +1,28 @@
-import React from 'react'
+"use client"
+import React, { useContext, useEffect } from 'react'
+
+import { fetchuser, saveUser, updateProfile } from '@/actions/useractions'
+import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
+import { UserData } from '@/store/dataStore';
 
 const page = () => {
+   const {
+    user,
+    isAuthenticated,
+  } = useKindeBrowserClient();
+    const {data, updateData} = useContext(UserData)
+
+  const getUser = async()=>{
+    let u = await fetchuser(user.email)
+    updateData(u);
+  }
+  useEffect(()=>{
+    if (isAuthenticated){
+      saveUser()
+      getUser()
+    }
+  }, [isAuthenticated, user])
+  
   return (
     <>
             <div className="fixed md:absolute inset-0 -z-10 h-full w-full dark:bg-slate-800 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
