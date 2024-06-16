@@ -58,7 +58,7 @@ const handleSubmit = async ()=>{
   return (
     <div className='text-black dark:text-white pt-20 flex flex-col justify-center items-center gap-3'> 
       <span className='text-2xl font-semibold'>Welcome to Dashboard</span>
-      <form action={handleSubmit} className="h-auto w-[50%] flex flex-col justify-center items-center gap-2">
+      <form action={handleSubmit} className="h-auto w-[60%] md:w-[50%] flex flex-col justify-center items-center gap-2">
       <div className='w-full'>
           <label htmlFor="actualname" className="mb-2  dark:text-gray-400 text-xs">Name</label>
           <input
