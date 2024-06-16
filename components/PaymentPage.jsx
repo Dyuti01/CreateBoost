@@ -187,7 +187,7 @@ const PaymentPage = ({ params }) => {
                             {/* <input onChange={handleChange} ref={amountValue} value={paymentform.amount} type="text" name="amount" id="amount" placeholder='Amount' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' /> */}
                             <input ref={fanName} onChange={handleChange} value={paymentform.name} type="text" name="name" id="name" placeholder='Enter your name' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 dark:placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
                             {/* <label htmlFor="amount" className='text-sm'>Your message</label> */}
-                            <input ref={message} type="text" name="message" id="message" placeholder='Your message' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 placeholder:text-slate-200 dark:placeholder:text-xs text-[14px] py-3' />
+                            <input ref={message} type="text" name="message" id="message" placeholder='Your message' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 dark:placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
                             {/* <label htmlFor="amount" className='text-sm'>Enter amount</label> */}
                             <input ref={amountValue} onChange={handleChange} type="number" name="amount" id="amount" value={paymentform.amount} placeholder='Amount atleast 10' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 dark:placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
 
