@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
 import { UserData } from '@/store/dataStore';
-import {LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
+import {RegisterLink, LoginLink, LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
 
 const Menu = ({ isClicked }) => {
@@ -35,6 +35,16 @@ const Menu = ({ isClicked }) => {
          <Link href={`/profile/${data.username}`} className="dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100">Profile</Link>
       </div>}
 
+      {!isAuthenticated <div className='flex transition-all duration-150 w-28'>
+
+         <LoginLink className="dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100">Sign in
+        </LoginLink>
+      </div>}
+
+      {!isAuthenticated <div className='flex transition-all duration-150 w-28'>
+         <RegisterLink className="dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100">Sign up
+        </RegisterLink>
+      </div>}
       {isAuthenticated &&<div className='flex transition-all duration-150 w-28'>
 
          <LogoutLink className="dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100">Sign out
@@ -43,7 +53,7 @@ const Menu = ({ isClicked }) => {
       
       <div className='flex transition-all duration-150 w-28'>
 
-        <Link href={'/'} alt="" className='dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100'>Help</Link>
+        <Link href={'/help'} alt="" className='dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100'>Help</Link>
 
       </div>
 
