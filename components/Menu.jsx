@@ -26,22 +26,22 @@ const Menu = ({ isClicked }) => {
         <Link href={'/about'} alt="" className='dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100'>About</Link>
       </div>
 
-      {isAuthenticated &&<div className='flex transition-all duration-150 w-28'>
+      {isAuthenticated && <div className='flex transition-all duration-150 w-28'>
          <Link href={`/dashboard/${data.username}`} alt="" className='dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100'>Dashboard</Link>
       </div>}
 
-      {isAuthenticated &&<div className='flex transition-all duration-150 w-28'>
+      {isAuthenticated && <div className='flex transition-all duration-150 w-28'>
 
          <Link href={`/profile/${data.username}`} className="dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100">Profile</Link>
       </div>}
 
-      {!isAuthenticated <div className='flex transition-all duration-150 w-28'>
+      {!isAuthenticated && <div className='flex transition-all duration-150 w-28'>
 
          <LoginLink className="dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100">Sign in
         </LoginLink>
       </div>}
 
-      {!isAuthenticated <div className='flex transition-all duration-150 w-28'>
+      {!isAuthenticated && <div className='flex transition-all duration-150 w-28'>
          <RegisterLink className="dark:text-white font-semibold text-sm hover:text-blue-500 hover:scale-110 w-16 transition-all duration-100">Sign up
         </RegisterLink>
       </div>}
