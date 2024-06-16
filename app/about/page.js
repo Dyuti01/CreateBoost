@@ -1,3 +1,4 @@
+"use client"
 import React, { useContext, useEffect } from 'react'
 
 import { fetchuser, saveUser, updateProfile } from '@/actions/useractions'
