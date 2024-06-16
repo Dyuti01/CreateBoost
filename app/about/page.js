@@ -2,6 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
+    <>
             <div className="absolute inset-0 -z-10 h-full w-full dark:bg-slate-800 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
     
     <div className='text-center text-black dark:text-white min-h-screen flex flex-col items-center mb-10 lg:mb-0'>
@@ -15,6 +16,7 @@ const page = () => {
         <iframe className="dark:md:w-[450px] w-[350px]" width="450" height="255" src="https://www.youtube.com/embed/dgDhpRxrBFY?si=3L8k6_f8qtj9P2Id" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
     </div>
+  </>
   )
 }
 
