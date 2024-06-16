@@ -64,7 +64,7 @@ const PaymentPage = ({ params }) => {
         const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
 
 
-        const data = await fetch('http://localhost:3000/razorpay', { method: 'POST', headers: { "Content-Type": "application/json", }, body: JSON.stringify(amount) }).then((t) =>
+        const data = await fetch(`${process.env.NEXT_PUBLIC_URL}/razorpay`, { method: 'POST', headers: { "Content-Type": "application/json", }, body: JSON.stringify(amount) }).then((t) =>
             t.text()
         )
 
