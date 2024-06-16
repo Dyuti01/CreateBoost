@@ -152,7 +152,6 @@ const PaymentPage = ({ params }) => {
                         {!fetching && payments.length == 0 && <span>No contributions</span>}
                         {!fetching && <ul className='flex flex-col gap-2 mt-4'>
                             {payments.map((fan, i) => {
-                                // console.log(i) // here i is the index
 
                                 let paymentDate = new Date(fan.updatedAt)
                                 return (
@@ -161,8 +160,8 @@ const PaymentPage = ({ params }) => {
                                             <img src="https://res.cloudinary.com/dkfd0a8gd/image/upload/v1718284084/avatar_blxagy.gif" alt="" className='w-5 h-5' />
 
                                             <div>
-                                                <li className='text-sm'><span className='text-cyan-400'>{fan.name}</span> <span className='text-slate-300'>contributed</span> ---&gt; <span className='text-green-500'>₹ {Number.parseFloat(fan.amount)}</span></li>
-                                                <span className='text-yellow-400 text-xs'>Message: </span>
+                                                <li className='text-sm'><span className='text-cyan-400'>{fan.name}</span> <span className='text-slate-400'>contributed</span> ---&gt; <span className='text-green-500'>₹ {Number.parseFloat(fan.amount)}</span></li>
+                                                <span className='text-slate-600 dark:text-slate-400 text-xs'>Message: </span>
                                                 <span className='text-blue-500 text-xs'>{fan.message}</span>
                                             </div>
 
@@ -186,11 +185,11 @@ const PaymentPage = ({ params }) => {
                             {/* <input onChange={handleChange} ref={message} value={paymentform.message} type="text" name="message" id="message" placeholder='Your message' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' /> */}
                             {/* <label htmlFor="amount" className='text-sm'>Enter amount</label> */}
                             {/* <input onChange={handleChange} ref={amountValue} value={paymentform.amount} type="text" name="amount" id="amount" placeholder='Amount' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' /> */}
-                            <input ref={fanName} onChange={handleChange} value={paymentform.name} type="text" name="name" id="name" placeholder='Enter your name' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
+                            <input ref={fanName} onChange={handleChange} value={paymentform.name} type="text" name="name" id="name" placeholder='Enter your name' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 dark:placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
                             {/* <label htmlFor="amount" className='text-sm'>Your message</label> */}
-                            <input ref={message} type="text" name="message" id="message" placeholder='Your message' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
+                            <input ref={message} type="text" name="message" id="message" placeholder='Your message' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 placeholder:text-slate-200 dark:placeholder:text-xs text-[14px] py-3' />
                             {/* <label htmlFor="amount" className='text-sm'>Enter amount</label> */}
-                            <input ref={amountValue} onChange={handleChange} type="number" name="amount" id="amount" value={paymentform.amount} placeholder='Amount atleast 10' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
+                            <input ref={amountValue} onChange={handleChange} type="number" name="amount" id="amount" value={paymentform.amount} placeholder='Amount atleast 10' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 dark:placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
 
                         </div>
                         <button onClick={(e) => {
