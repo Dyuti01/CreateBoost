@@ -2,6 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
+    <>
+            <div className="absolute inset-0 -z-10 h-full w-full dark:bg-slate-800 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+    
 <section class="mt-28">
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Frequently asked questions</h2>
@@ -44,6 +47,7 @@ const page = () => {
       </div>
   </div>
 </section>
+                        </>
   )
 }
 
