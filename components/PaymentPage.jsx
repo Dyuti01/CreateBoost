@@ -163,7 +163,7 @@ const PaymentPage = ({ params }) => {
                                 return (
                                     <div key={fan.oid} className='bg-slate-900 flex justify-between rounded-lg px-2 py-1'>
                                         <div className='flex gap-2'>
-                                            <img src="/avatar.gif" alt="" className='w-5 h-5' />
+                                            <img src="https://res.cloudinary.com/dkfd0a8gd/image/upload/v1718284084/avatar_blxagy.gif" alt="" className='w-5 h-5' />
 
                                             <div>
                                                 <li className='text-sm'><span className='text-cyan-400'>{fan.name}</span> <span className='text-slate-300'>contributed</span> ---&gt; <span className='text-green-500'>₹ {Number.parseFloat(fan.amount)}</span></li>
