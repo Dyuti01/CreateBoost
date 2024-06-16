@@ -64,7 +64,7 @@ const PaymentPage = ({ params }) => {
         const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
 
 
-        const data = await fetch('http://localhost:3000/razorpay', { method: 'POST', headers: { "Content-Type": "application/json", }, body: JSON.stringify(amount) }).then((t) =>
+        const data = await fetch(`${process.env.NEXT_PUBLIC_URL}/razorpay`, { method: 'POST', headers: { "Content-Type": "application/json", }, body: JSON.stringify(amount) }).then((t) =>
             t.text()
         )
 
@@ -73,7 +73,6 @@ const PaymentPage = ({ params }) => {
 
         var options = {
             "key": currentUser.paymentId, // Enter the Key ID generated from the Dashboard
-            // "key_id": process.env.NEXT_PUBLIC_KEY_ID, // Enter the Key ID generated from the Dashboard
             "amount": amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
             "currency": "INR",
             "name": "CreateBoost", //your business name
@@ -109,11 +108,7 @@ const PaymentPage = ({ params }) => {
                 {!fetching && currentUser.coverPic && <div ref={ref} style={{ backgroundImage: `url('https://${currentUser.coverPic.split("//")[1]}')`, height: "362px" }} className='bg-center bg-cover rounded-b-[26px]'>
                 </div>}
 
-                {/* {!fetching && <div ref={ref} className={`bg-[url('https://res.cloudinary.com/dkfd0a8gd/image/upload/v1718427884/BingWallpaper_47_yiqm1l.jpg')] bg-cover bg-center h-[362px]`}>
-                </div>} */}
-
                 <div className='relative flex justify-center items-center'>
-                    {/* <img className='absolute w-28 rounded-xl' src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/321371/785acefb527f406dbcbeee9dc0d76222/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1717804800&token-hash=wEPc5MM4g-9mL5ohg6srPK9N_P4vbBnkaBPju-dp3n8%3D" alt="" /> */}
                     {fetching &&
                         <div className="text-center flex justify-center items-center mt-5">
                             <div role="status">
@@ -137,7 +132,7 @@ const PaymentPage = ({ params }) => {
                         <span className='text-xs text-gray-600 dark:text-gray-300'>Total funds: ₹ {payments.reduce((a,b)=>Number.parseFloat(a) + Number.parseFloat(b.amount), 0)}</span>
                     </div>
 
-                    <button className='bg-blue-700 dark:text-white hover:bg-blue-600 px-16 py-2 rounded-lg font-semibold text-sm transition-all duration-200'>Join for free</button>
+                    <button className='bg-blue-700 text-white hover:bg-blue-600 px-16 py-2 rounded-lg font-semibold text-sm transition-all duration-200'>Join for free</button>
                     <img className='w-6 dark:invert mt-1' src="https://res.cloudinary.com/dkfd0a8gd/image/upload/v1718284081/twitter_r2wyja.svg" alt="" />
                 </div>
 
@@ -161,9 +156,9 @@ const PaymentPage = ({ params }) => {
 
                                 let paymentDate = new Date(fan.updatedAt)
                                 return (
-                                    <div key={fan.oid} className='bg-slate-200 dark:bg-slate-900 flex justify-between rounded-lg px-2 py-1'>
+                                    <div key={fan.oid} className='bg-slate-100 dark:bg-slate-900 flex justify-between rounded-lg px-2 py-1'>
                                         <div className='flex gap-2'>
-                                            <img src="/avatar.gif" alt="" className='w-5 h-5' />
+                                            <img src="https://res.cloudinary.com/dkfd0a8gd/image/upload/v1718284084/avatar_blxagy.gif" alt="" className='w-5 h-5' />
 
                                             <div>
                                                 <li className='text-sm'><span className='text-cyan-400'>{fan.name}</span> <span className='text-slate-300'>contributed</span> ---&gt; <span className='text-green-500'>₹ {Number.parseFloat(fan.amount)}</span></li>
@@ -191,18 +186,17 @@ const PaymentPage = ({ params }) => {
                             {/* <input onChange={handleChange} ref={message} value={paymentform.message} type="text" name="message" id="message" placeholder='Your message' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' /> */}
                             {/* <label htmlFor="amount" className='text-sm'>Enter amount</label> */}
                             {/* <input onChange={handleChange} ref={amountValue} value={paymentform.amount} type="text" name="amount" id="amount" placeholder='Amount' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' /> */}
-                            <input ref={fanName} onChange={handleChange} value={paymentform.name} type="text" name="name" id="name" placeholder='Enter your name' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
+                            <input ref={fanName} onChange={handleChange} value={paymentform.name} type="text" name="name" id="name" placeholder='Enter your name' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
                             {/* <label htmlFor="amount" className='text-sm'>Your message</label> */}
-                            <input ref={message} type="text" name="message" id="message" placeholder='Your message' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
+                            <input ref={message} type="text" name="message" id="message" placeholder='Your message' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
                             {/* <label htmlFor="amount" className='text-sm'>Enter amount</label> */}
-                            <input ref={amountValue} onChange={handleChange} type="number" name="amount" id="amount" value={paymentform.amount} placeholder='Amount atleast 10' className='focus:ring-white rounded-lg bg-slate-100 border border-blue-600 dark:bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
+                            <input ref={amountValue} onChange={handleChange} type="number" name="amount" id="amount" value={paymentform.amount} placeholder='Amount atleast 10' className='focus:ring-white rounded-lg bg-slate-500 placeholder:text-slate-200 placeholder:text-xs text-[14px] py-3' />
 
                         </div>
                         <button onClick={(e) => {
                             paymentform.name = fanName.current.value
                             paymentform.message = message.current.value
                             paymentform.amount = (amountValue.current.value * 100)
-                            console.log(paymentform.amount)
                             pay(e, paymentform.amount)
                         }} disabled={paymentform.name.length===0 || Number(paymentform.amount)<10} className='disabled:bg-slate-500 bg-blue-600 mt-3 px-10 py-2 rounded-lg' id="rzp-button1">Pay</button>
 
@@ -215,6 +209,5 @@ const PaymentPage = ({ params }) => {
         </>
     )
 }
-
 
 export default PaymentPage
