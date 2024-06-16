@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-            <div className="absolute inset-0 -z-10 h-full w-full dark:bg-slate-800 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+            <div className="fixed md:absolute inset-0 -z-10 h-full w-full dark:bg-slate-800 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
     
     <div className='text-center text-black dark:text-white min-h-screen flex flex-col items-center mb-10 lg:mb-0'>
       <div className='flex flex-col items-center justify-center h-[55vh] gap-3'>
