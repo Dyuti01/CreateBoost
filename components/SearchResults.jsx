@@ -21,7 +21,7 @@ const SearchResults = ({query}) => {
     <ul>
       {users.map((creator)=>{
         if (creator.name.toLowerCase().includes(query)){
-          return <li className='py-3 px-4 rounded-xl hover:bg-slate-700'><Link href={`http://localhost:3000/profile/${creator.username}`}>
+          return <li className='py-3 px-4 rounded-xl hover:bg-slate-700'><Link href={`${process.env.NEXT_PUBLIC_URL}/profile/${creator.username}`}>
             {creator.name}
             </Link></li>}
       })}
