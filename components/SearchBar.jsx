@@ -25,7 +25,7 @@ const SearchBar = () => {
         </div>
         <input onChange={handleChange} type="search" id="default-search" value={query} className="block w-full pl-[48px] py-5 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Find your creator..." required />
       </div>
-      <div className='min-h-20 text-white'>
+      <div className='min-h-32 text-white'>
         {query.length>0 && <SearchResults query={query.toLowerCase()}/>}
 
       </div>
