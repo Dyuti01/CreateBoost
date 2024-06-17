@@ -3,3 +3,5 @@
 - Inspired from `Buy Me a Coffee`
 ### Link to the website:
 - https://create-boost.vercel.app/
+### Techstack
+[![My Skills](https://skillicons.dev/icons?i=html,css,tailwindcss,javascript,react,nextjs,mongodb,kinde&theme=light)](https://skillicons.dev)
