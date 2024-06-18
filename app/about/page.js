@@ -34,8 +34,8 @@ const page = () => {
         <p className='w-[80%] lg:w-[50%]'>It is a crowdfunding platform for creators. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est animi nemo iste libero, voluptate nulla tempore eos, suscipit, aperiam maiores eligendi laudantium hic! Voluptas, tempora! Nihil ducimus nesciunt, atque numquam quibusdam voluptates unde reprehenderit corrupti asperiores impedit deserunt eos consequatur sint cupiditate similique dolor quo!</p>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-        <iframe className="dark:md:w-[450px] w-[350px]" width="450" height="255" src="https://www.youtube.com/embed/K9Lji9NWMF8?si=E5Y4XNT6M21lhTg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-        <iframe className="dark:md:w-[450px] w-[350px]" width="450" height="255" src="https://www.youtube.com/embed/dgDhpRxrBFY?si=3L8k6_f8qtj9P2Id" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe className="md:w-[450px] w-[350px] h-[255px]" src="https://www.youtube.com/embed/K9Lji9NWMF8?si=E5Y4XNT6M21lhTg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe className="md:w-[450px] w-[350px] h-[255px]" src="https://www.youtube.com/embed/dgDhpRxrBFY?si=3L8k6_f8qtj9P2Id" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
     </div>
   </>
