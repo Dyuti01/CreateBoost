@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="flex gap-2 items-center text-black dark:text-white text-5xl font-extrabold pl-[96px] mt-10">World of Creators <img className="w-28 pb-2" src="https://res.cloudinary.com/dkfd0a8gd/image/upload/v1718292081/creatorSmall_dd7cad.gif" alt="" /></h1>
         <div className="flex flex-col justify-center items-center gap-5">
           <div className="flex flex-col gap-1">
-            <div className="text-center text-3xl text-gray-200">Crowdfunding platform for Creators</div>
+            <div className="text-center text-3xl text-gray-300">Crowdfunding platform for Creators</div>
             <div className="text-center text-lg text-gray-400">Get funded by your fans and followers and spread your creativity</div>
             <div className="text-center text-sm text-gray-400">Start now!</div>
           </div>
