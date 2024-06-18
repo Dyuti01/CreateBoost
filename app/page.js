@@ -68,8 +68,8 @@ export default function Home() {
       <div className="mt-16 mb-28 px-10 text-black dark:text-white flex flex-col gap-7 items-center justify-center">
         <h1 className="text-2xl font-bold">Learn more about us</h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
-        <iframe className="dark:md:w-[450px] w-[350px]" width="450" height="255" src="https://www.youtube.com/embed/K9Lji9NWMF8?si=E5Y4XNT6M21lhTg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-        <iframe className="dark:md:w-[450px] w-[350px]" width="450" height="255" src="https://www.youtube.com/embed/dgDhpRxrBFY?si=3L8k6_f8qtj9P2Id" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe className="md:w-[450px] w-[350px] h-[255px]" src="https://www.youtube.com/embed/K9Lji9NWMF8?si=E5Y4XNT6M21lhTg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe className="md:w-[450px] w-[350px] h-[255px]" src="https://www.youtube.com/embed/dgDhpRxrBFY?si=3L8k6_f8qtj9P2Id" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
 
       </div>
