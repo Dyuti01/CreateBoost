@@ -35,12 +35,23 @@ const page = () => {
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                      How to make your creator page in createBoost?
+                  </h3>
+                  <p class="text-gray-500 dark:text-gray-400">Just sign up here and fill all the necessary details in dashboard?</p>
+                  <p class="text-gray-500 dark:text-gray-400">Must provide your PaymentId and Secret to have payments from your fans into your account.</p>
+                  <p class="text-gray-500 dark:text-gray-400">Now having done, you can share your profile page link to your fans.</p>
+              </div>
+              <div class="mb-10">
+                  <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                      <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                       How to do payment?
                   </h3>
                   <p class="text-gray-500 dark:text-gray-400">It is very simple. Just search for your favourite creator and you will be redirected to the creator profile page. There you will see the payment form. Fill the details and contrinute to the creator.</p>
                   <p class="text-gray-500 dark:text-gray-400">Feel free to <a href="#" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
               </div>
-              <div class="mb-10">
+          </div>
+          <div>
+               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                       If payment failed?
@@ -48,8 +59,6 @@ const page = () => {
                   <p class="text-gray-500 dark:text-gray-400">Dont' worry. Your money will not be deducted.</p>
                   <p class="text-gray-500 dark:text-gray-400">Find out more information by <a href="#" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">reading the license</a>.</p>
               </div>
-          </div>
-          <div>
               <div class="mb-10">
                   <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                       <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
