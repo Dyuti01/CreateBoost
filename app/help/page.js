@@ -48,7 +48,6 @@ const page = () => {
                   </h3>
                   <p class="text-gray-500 dark:text-gray-400">It is very simple. Just search for your favourite creator and you will be redirected to the creator profile page. There you will see the payment form. Fill the details and contrinute to the creator.</p>
                   <p class="text-gray-500 dark:text-gray-400">Currerntly, two creators present for demonstration whose names are - ustadji, dyuti. We can search for these creators.</p>
-                  <p class="text-gray-500 dark:text-gray-400">Feel free to <a href="#" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
               </div>
           </div>
           <div>
