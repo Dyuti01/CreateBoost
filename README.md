@@ -1,6 +1,5 @@
 # CreateBoost
 - A funding Website for Creators where fans can come and search for their favourite creator and can contribute some amount of money to the creator.
-- Inspired from `Buy Me a Coffee`
 ### Link to the website:
 - https://create-boost.vercel.app/
 ### Techstack
